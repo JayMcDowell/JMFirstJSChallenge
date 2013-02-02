@@ -1,0 +1,1 @@
+This is the first Javascript Challenge issued by The Nashville Software School.  I know I will look at this code and laugh at myself in a month or two.  

@@ -1,0 +1,76 @@
+<!doctype html><html lang="en">
+
+<head>
+
+<title>JMMJSplay</title>
+<meta name="description"= content="This is an Exercise to try a JS switch Statement for 
+The Nashville Software School Program"</>
+<link rel="stylesheet" href="1stJSChall.css"/>
+<!-- <script src="ExJSswitch.js"></script> -->
+<meta charset= "utf-8">
+</head>
+<body>
+	<div id="column1"> <h1>NSS</h1>
+	</div>
+
+<div id="Main"><h2 class="clearfix">Welcome to Jay's 1st Javascript Challenge Exercise.</h2>
+</div>
+		<h2 class="clearfix">This is for The Nashville Software School.
+		</h2>
+
+		<script>
+			var students = 
+		 			   [[100, "stud0"],
+						[95, "stud1"],
+						[90, "stud2"],
+						[85, "stud3"],
+						[80, "stud4"],
+					    [87.7, "stud5"],
+						[70, "stud6"],
+						[65, "stud7"],
+						[60, "stud8"],
+						[55, "stud9"]];
+
+			var sum = function() {
+          		return (students[0][0] + 
+          				students[1][0] + 
+          				students[2][0] + 
+          				students[3][0] + 
+          				students[4][0] + 
+          				students[5][0] + 
+          				students[6][0] + 
+          				students[7][0] + 
+          				students[8][0] + 
+          				students[9][0]);
+        	};
+
+        	var avg = sum() / students.length;
+        	
+				avg = avg.toFixed(2);
+
+        		document.write("<br /><br /><br /><br /><br /><br /><h2>Your class average Grade is "  + avg + "</h2>");
+        		
+
+        		var letter = 0
+        		if (avg >=90) {
+        	 		letter = "A"
+        		}
+		        else if (avg >=80 && avg<90) {
+		        	letter = "B"
+		        }
+		        else if (avg >=70 && avg<80) {
+		        	letter = "C"
+		        }
+		        else if (avg >=60 && avg<70) {
+		        	letter = "D"
+		        }
+		        else 
+		        	letter = "F";
+        
+
+        		document.write("<h2>Your class average Letter Grade is a "   + letter +  ".</h2>");
+
+		</script>
+
+	</form>
+</body>
